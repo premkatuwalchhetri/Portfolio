@@ -10,9 +10,24 @@ def home_page():
 @app.route('/skills')
 def skill_page():
     items = [
-{'id': 1,'name':'java','barcode':'8456445464555','knowledge':'intermidiate'},
-{'id': 2,'name':'python','barcode':'1255644546445','knowledge':'intermidiate'},
-{'id': 3,'name':'javascript','barcode':'4326445464525','knowledge':'intermidiate'},
+        {
+            'name': 'Java',
+            'level': 'Intermediate',
+            'percent': 70,
+            'description': 'Object-oriented programming, collections, basic Spring Boot APIs'
+        },
+        {
+            'name': 'Python',
+            'level': 'Intermediate',
+            'percent': 80,
+            'description': 'Django web apps, Flask web apps, REST APIs, automation scripts'
+        },
+        {
+            'name': 'JavaScript',
+            'level': 'Intermediate',
+            'percent': 65,
+            'description': 'DOM manipulation, basic frontend logic'
+        }
     ]
     return render_template('skills.html', items=items)
 
