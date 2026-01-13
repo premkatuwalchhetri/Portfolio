@@ -4,5 +4,61 @@ Home Page
 {% endblock %}
 
 {% block content %}
-this is the content of the home page
+<div class="container mt-5 text-center">
+    <h1 class="text-info mb-3">
+        Hi there, I'm Prem
+    </h1>
+   <h4 class="text-info mb-4">
+    Python & Django/Flask Developer
+    </h4>
+   <p class="text-muted mb-4">
+    I am a backend developer
+    </p>
+    <a href="#" class="btn btn-info me-2">
+        View projects
+    </a>
+    <a href="" class="btn btn-outline-light">
+        Download Resume
+    </a>
+</div>
+
+<div class="container mt-5">
+  <h3 class="text-center text-info mb-4">
+    Featured Projects
+  </h3>
+
+  <div class="row text-center">
+
+    <div class="col-md-4 mb-4">
+      <h5>Hotel Management System</h5>
+      <p class="text-muted">
+        Developed using Django where users can book and reserve rooms.
+      </p>
+      <a href="https://github.com/premkatuwalchhetri/pythondjango/tree/54b7e2717d84897d7cbab95592d942fed31d491d/django" target="_blank" class="btn btn-outline-info btn-sm">
+        GitHub
+      </a>
+    </div>
+
+    <div class="col-md-4 mb-4">
+      <h5>Portfolio Website</h5>
+      <p class="text-muted">
+        Personal portfolio built using Flask and Bootstrap.
+      </p>
+      <a href="#" class="btn btn-outline-info btn-sm">
+        GitHub
+      </a>
+    </div>
+
+    <div class="col-md-4 mb-4">
+      <h5>API Project</h5>
+      <p class="text-muted">
+        REST API built with Flask for managing data.
+      </p>
+      <a href="#" class="btn btn-outline-info btn-sm">
+        GitHub
+      </a>
+    </div>
+  </div>
+</div>
+
 {% endblock %}

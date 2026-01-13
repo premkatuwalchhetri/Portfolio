@@ -16,28 +16,53 @@
   </head>
   <body>
     <!--Navbar here-->
-        <nav class="navbar navbar-dark bg-dark">
-  <a class="navbar-brand" href="{{ url_for('home_page') }}">Prem Portfolio</a>
-  <ul class="navbar-nav flex-row">
-    <li class="nav-item px-2">
-      <a class="nav-link" href="{{ url_for('home_page') }}">Home</a>
-    </li>
-  </ul>
-  <ul class="navbar-nav flex-row ml-auto">
-    <li class="nav-item px-2">
-      <a class="nav-link" href="{{ url_for('skill_page') }}">Skills</a>
-    </li>
-    <li class="nav-item px-2">
-      <a class="nav-link" href="#">Project</a>
-    </li>
-    <li class="nav-item px-2">
-      <a class="nav-link" href="#">Resume</a>
-    </li>
-    <li class="nav-item px-2">
-      <a class="nav-link" href="#">Contact</a>
-    </li>
-  </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+  <div class="container">
+
+    <!-- Brand -->
+    <a class="navbar-brand fw-bold" href="{{ url_for('home_page') }}">
+      Prem.dev
+    </a>
+
+    <!-- Mobile toggle -->
+    <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Links -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url_for('home_page') }}">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url_for('skill_page') }}">Skills</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">Projects</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link"href="#">
+            Resume
+          </a>
+        </li>
+
+      </ul>
+    </div>
+
+  </div>
 </nav>
+
 {% block content %}
 
 {% endblock %}
