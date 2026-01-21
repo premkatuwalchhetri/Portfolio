@@ -13,20 +13,27 @@ def skill_page():
         {
             'name': 'Java',
             'level': 'Intermediate',
-            'percent': 70,
             'description': 'Object-oriented programming, collections, basic Spring Boot APIs'
         },
         {
             'name': 'Python',
             'level': 'Intermediate',
-            'percent': 80,
             'description': 'Django web apps, Flask web apps, REST APIs, automation scripts'
         },
         {
             'name': 'JavaScript',
-            'level': 'Intermediate',
-            'percent': 65,
+            'level': 'Fluent',
             'description': 'DOM manipulation, basic frontend logic'
+        },
+        {
+            'name': 'C#',
+            'level': 'Intermediate',
+            'description': 'DOM manipulation, basic frontend logic'
+        },
+        {
+            'name': 'PHP',
+            'level': 'Intermediate',
+            'description': 'DOM manipulation, basic backend logic'
         }
     ]
     return render_template('skills.html', items=items)
